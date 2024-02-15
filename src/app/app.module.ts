@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { HeaderComponent } from './header/header.component';
+import { NavComponent } from './nav/nav.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
