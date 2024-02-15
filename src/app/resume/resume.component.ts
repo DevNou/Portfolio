@@ -1,10 +1,18 @@
-import { Component } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-resume',
   templateUrl: './resume.component.html',
   styleUrl: './resume.component.css'
 })
-export class ResumeComponent {
-
-}
+export class ResumeComponent implements OnInit{
+  constructor(private titleService:Title){
+    this.titleService.setTitle("Arseni's Resume");
+  }
+  
+  ngOnInit(): void {
+    
+  }
+  }
+  
