@@ -5,14 +5,27 @@
             <div class="text-center">
                 <h2>About me 😁</h2>
                 <img src="../../assets/photo.jpg" alt="profile pic" width="256" height="256" class="rounded-circle">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, esse. Odio quidem doloribus harum illum nihil non accusantium rem cum eligendi, tempora veniam impedit autem ea iure blanditiis? Obcaecati, repellat.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, esse. Odio quidem doloribus harum
+                    illum nihil non accusantium rem cum eligendi, tempora veniam impedit autem ea iure blanditiis?
+                    Obcaecati, repellat.</p>
             </div>
         </div>
         <!--Project-->
         <div class="col-lg shadow border m-1">
             <div class="text-center">
                 <h2>Featured Project</h2>
+                <h4>{{featuredProject.name}}</h4>
             </div>
+            <ngb-carousel>
+                <ng-template ngbSlide>
+                    <img src="../../assets/Image1.jpg" alt="Future Slide 1" style="display: block; width: 100%;">
+                </ng-template>
+                <ng-template ngbSlide>
+                    <img src="../../assets/Image2.jpg" alt="Futeure Slide 2" style="display: block; width: 100%;">
+                </ng-template>
+            </ngb-carousel>
+            <p class="nt-2">{{featuredProject.summary}}</p>
+            <p>Visit the Portfolio section to learn more!😉</p>
         </div>
     </div>
 </div>

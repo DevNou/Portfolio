@@ -1,7 +1,7 @@
 export class Tag{
     static readonly ANGULAR = new Tag('Angular','red')
     static readonly TYPESCRIPT = new Tag('TypeScript','darkred')
-    static readonly CSHARP = new Tag('C#','pink')
+    static readonly CSHARP = new Tag('C#','lightblue')
     static readonly JAVASCRIPT = new Tag('JavaScript','orange')
     static readonly C = new Tag('C','purple')
     static readonly JAVA = new Tag('Java','grey')

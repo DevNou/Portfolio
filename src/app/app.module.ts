@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbCarouselModule, NgbModule, NgbSlide } from '@ng-bootstrap/ng-bootstrap';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { HeaderComponent } from './header/header.component';
 import { NavComponent } from './nav/nav.component';
@@ -12,6 +12,10 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ResumeComponent } from './resume/resume.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProjectCardComponent } from './project-card/project-card.component';
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
+import { ModalModule } from 'ngx-bootstrap/modal';
+import { ProjectModalComponent } from './project-modal/project-modal.component';
+
 
 @NgModule({
   declarations: [
@@ -22,12 +26,17 @@ import { ProjectCardComponent } from './project-card/project-card.component';
     PortfolioComponent,
     ResumeComponent,
     ContactComponent,
-    ProjectCardComponent
+    ProjectCardComponent,
+    ProjectModalComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    TooltipModule,
+    ModalModule.forRoot(),
+    NgbCarouselModule,
+    NgbSlide
   ],
   providers: [
     provideAnimationsAsync()
