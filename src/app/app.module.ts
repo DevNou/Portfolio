@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { HeaderComponent } from './header/header.component';
+import { HeaderComponent } from './header/header.component'; 
 import { NavComponent } from './nav/nav.component';
 import { HomeComponent } from './home/home.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
@@ -14,6 +14,7 @@ import { ModalModule } from 'ngx-bootstrap/modal';
 import { ProjectModalComponent } from './project-modal/project-modal.component';
 import {CollapseModule} from 'ngx-bootstrap/collapse';
 import {CarouselModule} from 'ngx-bootstrap/carousel';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import {CarouselModule} from 'ngx-bootstrap/carousel';
     AppRoutingModule,
     ModalModule.forRoot(),
     CarouselModule.forRoot(),
-    CollapseModule.forRoot()
+    CollapseModule.forRoot(),
+    FormsModule
   ],
   providers: [
     provideAnimationsAsync()
