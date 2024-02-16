@@ -9,8 +9,10 @@ import { Project } from '../_modules/Project';
   styleUrl: './home.component.css'
 })
 export class HomeComponent implements OnInit {
+[x: string]: any;
 
-  featuredProject = {} as Project;
+featuredProject = {} as Project;
+picture: any;
 
   constructor(private titleService: Title, private projectService: ProjectsService) {
     this.titleService.setTitle("Arseni's-Home");
