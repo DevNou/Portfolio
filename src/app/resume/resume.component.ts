@@ -7,6 +7,11 @@ import { Title } from '@angular/platform-browser';
   styleUrl: './resume.component.css'
 })
 export class ResumeComponent implements OnInit{
+
+  isWorkExperienceOpen : boolean = false;
+  isEducationOpen : boolean = false;
+  isCertificationOpen : boolean = false;
+  isSkillsOpen : boolean = false;
   constructor(private titleService:Title,private renderer: Renderer2){
     this.titleService.setTitle("Arseni's Resume");
   }

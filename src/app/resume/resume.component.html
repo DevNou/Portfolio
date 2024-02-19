@@ -1,4 +1,153 @@
 <div class="container text-center">
     <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border">Download PDF resume</button>
+    <div class="pb-2">
+        <accordion [isAnimated]="true" class="shadow">
+            <accordion-group [(isOpen)]="isWorkExperienceOpen">
+
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Work Experience</div>
+                    <div style="width: 10.95;">
+                        <div *ngIf="!isWorkExperienceOpen" style="color:white;">></div>
+                        <div *ngIf="isWorkExperienceOpen" style="color:white;">v</div>
+                    </div>
+                </button>
+
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Practical Software Engineer</h2>
+                    <h3 class="text-primary">SGA ABRAMIDIS E.A</h3>
+                    <ul>
+                        <li>f</li>
+                        <li>f</li>
+                        <li>f</li>
+                    </ul>
+                </div>
+                <hr>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Practical Software Engineer</h2>
+                    <h3 class="text-primary">SGA ABRAMIDIS E.A</h3>
+                    <ul>
+                        <li>f</li>
+                        <li>f</li>
+                        <li>f</li>
+                    </ul>
+                </div>
+                <hr>
+            </accordion-group>
+              <accordion-group [(isOpen)]="isEducationOpen">
+
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Education</div>
+                    <div style="width: 10.95;">
+                        <div *ngIf="!isEducationOpen" style="color:white;">></div>
+                        <div *ngIf="isEducationOpen" style="color:white;">v</div>
+                    </div>
+                </button>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Degree of Software Engineer from private technical institute</h2>
+                    <h3 class="text-primary">IEK DELTA 360</h3>
+                    <ul>
+                        <li>f</li>
+                        <li>f</li>
+                        <li>f</li>
+                    </ul>
+                </div>
+                <hr>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Degree of Software Engineer from private technical institute</h2>
+                    <h3 class="text-primary">IEK DELTA 360</h3>
+                    <ul>
+                        <li>f</li>
+                        <li>f</li>
+                        <li>f</li>
+                    </ul>
+                </div>
+                <hr>
+            </accordion-group>
+            <accordion-group [(isOpen)]="isCertificationOpen">
+
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Certification/Seminars</div>
+                    <div style="width: 10.95;">
+                        <div *ngIf="!isCertificationOpen" style="color:white;">></div>
+                        <div *ngIf="isCertificationOpen" style="color:white;">v</div>
+                    </div>
+                </button>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Degree of Software Engineer from private technical institute</h2>
+                    <h3 class="text-primary">IEK DELTA 360</h3>
+                    <ul>
+                        <li>f</li>
+                        <li>f</li>
+                        <li>f</li>
+                    </ul>
+                </div>
+                <hr>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Degree of Software Engineer from private technical institute</h2>
+                    <h3 class="text-primary">IEK DELTA 360</h3>
+                    <ul>
+                        <li>f</li>
+                        <li>f</li>
+                        <li>f</li>
+                    </ul>
+                </div>
+                <hr>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Degree of Software Engineer from private technical institute</h2>
+                    <h3 class="text-primary">IEK DELTA 360</h3>
+                    <ul>
+                        <li>f</li>
+                        <li>f</li>
+                        <li>f</li>
+                    </ul>
+                </div>
+                <hr>
+            </accordion-group>
+            <accordion-group [(isOpen)]="isSkillsOpen">
+
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Skills</div>
+                    <div style="width: 10.95;">
+                        <div *ngIf="!isSkillsOpen" style="color:white;">></div>
+                        <div *ngIf="isSkillsOpen" style="color:white;">v</div>
+                    </div>
+                </button>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Degree of Software Engineer from private technical institute</h2>
+                    <h3 class="text-primary">IEK DELTA 360</h3>
+                    <ul>
+                        <li>f</li>
+                        <li>f</li>
+                        <li>f</li>
+                    </ul>
+                </div>
+                <hr>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Degree of Software Engineer from private technical institute</h2>
+                    <h3 class="text-primary">IEK DELTA 360</h3>
+                    <ul>
+                        <li>f</li>
+                        <li>f</li>
+                        <li>f</li>
+                    </ul>
+                </div>
+                <hr>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Degree of Software Engineer from private technical institute</h2>
+                    <h3 class="text-primary">IEK DELTA 360</h3>
+                    <ul>
+                        <li>f</li>
+                        <li>f</li>
+                        <li>f</li>
+                    </ul>
+                </div>
+                <hr>
+            </accordion-group>
+        </accordion>
+    </div>
 
 </div>
