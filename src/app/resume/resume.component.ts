@@ -13,7 +13,7 @@ export class ResumeComponent implements OnInit{
   isCertificationOpen : boolean = false;
   isSkillsOpen : boolean = false;
   constructor(private titleService:Title,private renderer: Renderer2){
-    this.titleService.setTitle("Arseni's Resume");
+    this.titleService.setTitle("Arseni's-Resume");
   }
   
   ngOnInit(): void {
