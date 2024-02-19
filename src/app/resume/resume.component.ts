@@ -1,4 +1,4 @@
-import { Component,OnInit } from '@angular/core';
+import { Component,OnInit, Renderer2 } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 @Component({
@@ -7,12 +7,22 @@ import { Title } from '@angular/platform-browser';
   styleUrl: './resume.component.css'
 })
 export class ResumeComponent implements OnInit{
-  constructor(private titleService:Title){
+  constructor(private titleService:Title,private renderer: Renderer2){
     this.titleService.setTitle("Arseni's Resume");
   }
   
   ngOnInit(): void {
     
+  }
+
+  DownloadFile()
+  {
+    const link = this.renderer.createElement('a');
+    link.setAttribute('target','_blank');
+    link.setAttribute('href','../../assets/Resume.pdf');
+    link.setAttribute('download','Resume.pdf');
+    link.click();
+    link.remove();
   }
   }
   
